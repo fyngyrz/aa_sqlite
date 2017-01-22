@@ -846,26 +846,26 @@ if __name__ == "__main__":
 		print str(tup)
 	a.close()
 
-	print "heavy, case-sensistive mode, case-sensitive method"
+	print "heavy, case-sensitive mode, case-sensitive method"
 	sql = "SELECT uname FROM names WHERE uname LIKE('ben')"
 	a = dbl(thedb,sql,cs=True)
 	for tup in a.tuples:
 		print str(tup)
 
-	print "heavy, case-sensistive mode, case-insensitive method"
+	print "heavy, case-sensitive mode, case-insensitive method"
 	sql = "SELECT uname FROM names WHERE lower(uname) LIKE('ben')"
 	a = dbl(thedb,sql,cs=True)
 	for tup in a.tuples:
 		print str(tup)
 
-	print "light, case-sensistive mode, case-sensitive method"
+	print "light, case-sensitive mode, case-sensitive method"
 	sql = "SELECT uname FROM names WHERE uname LIKE('ben')"
 	a = dbl(thedb,sql,lean=True,cs=True)
 	for tup in a.tup():
 		print str(tup)
 	a.close()
 
-	print "light, case-sensistive mode, case-insensitive method"
+	print "light, case-sensitive mode, case-insensitive method"
 	sql = "SELECT uname FROM names WHERE lower(uname) LIKE('ben')"
 	a = dbl(thedb,sql,lean=True,cs=True)
 	for tup in a.tup():
