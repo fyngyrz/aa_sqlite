@@ -43,7 +43,7 @@ class dbl(object):
      1st-Rel: 1.0.6
      Version: 1.0.9
      History:
-	    1.0.9  - case-sensitivity issues with sqlite addressed
+		1.0.9  - case-sensitivity issues with sqlite addressed
 		1.0.8  - bugfixes
 		1.0.7  - bugfixes
 		1.0.6  - first public release
