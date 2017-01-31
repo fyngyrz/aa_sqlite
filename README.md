@@ -8,7 +8,7 @@ restriction.
 
 That's the up side. The down side is, as a fairly complete database,
 there are many options and varied ways it can be used, and managing
-actual database transactions isn't all that simple â to do it right,
+actual database transactions isn't all that simple. to do it right,
 even a single query takes about sixteen lines of code. And yes, if you
 want maximum flexibility and the ability to use every feature in
 sqlite3, that's how you should do it.
@@ -16,10 +16,10 @@ sqlite3, that's how you should do it.
 But. Most database operations are very straightforward. You want to
 issue a single command to the database, or a query. Perhaps you want to
 write a bunch of data and then commit it all at once so that the
-database doesnât contain part of the data from a more complex
+database doesn't contain part of the data from a more complex
 transaction. You need to know if something went wrong, and if it did,
 what it was. Those are by far the most common use cases for me, and I
-suspect thatâs true for others as well.
+suspect that's true for others as well.
 
 Frankly, it's difficult enough dealing with the SQL query language
 itself. Why make actually using it harder than it has to be?
