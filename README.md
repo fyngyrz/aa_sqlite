@@ -1,4 +1,5 @@
 # aa_sqlite
+
 ## Whys and Wherefores
 
 Lurking within the normal Python 2.x distribution is the sqlite3 import,
